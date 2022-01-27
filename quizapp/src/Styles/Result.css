@@ -1,0 +1,15 @@
+.result-main-container{
+    display: flex;
+    justify-content: center;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+.playagain-btn{
+    margin: 5px;
+    padding: 2px;
+    background-color: rgb(250, 188, 16);
+    border-radius: 5px;
+    color: white;
+}

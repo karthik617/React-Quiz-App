@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.main-container {
+  width: 500px;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+.quiz-container{
+  width: 100%;
+  padding: 10px;
+}
+.quiz-title{
+  background-color: rgb(78, 73, 73);
+  color: aliceblue;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+}
+.quiz-question-container{
+  width: 100%;
+}

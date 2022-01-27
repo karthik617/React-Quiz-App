@@ -1,0 +1,11 @@
+.single-question{
+    margin: 5px;
+    padding: 2px;
+}
+.single-question button{
+    margin: 5px;
+    padding: 2px;
+    background-color: rgb(250, 188, 16);
+    border-radius: 5px;
+    color: white;
+}
