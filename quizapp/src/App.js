@@ -2,30 +2,9 @@ import React,{useState} from 'react';
 import './App.css';
 import QuestionBox from './Components/QuestionBox';
 import Result from './Components/Result';
+import quizapi from './Utils/QuizList';
 
 function App() {
-  const quizapi = [
-    {
-      question:"What is karthik's age?",
-      answer:[21,22,20,19],
-      correct:21
-    },
-    {
-      question:"What is karthik's surname?",
-      answer:["Yadav","Konar","shetty","nadar"],
-      correct:"Yadav"
-    },
-    {
-      question:"What is karthik's birthday ?",
-      answer:[13,14,15,10],
-      correct:13
-    },
-    {
-      question:"What is karthik's mother name?",
-      answer:["Jaya","Usha","Pavithra","Maya"],
-      correct:"Jaya"
-    }
-  ]
   const [question,setQuestion] = useState(quizapi)
   const [score,setScore] = useState(0)
   const [response,setResponse] = useState(0)
