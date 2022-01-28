@@ -1,15 +1,25 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import './App.css';
 import QuestionBox from './Components/QuestionBox';
 import Result from './Components/Result';
-import quizapi from './Utils/QuizList';
+import quizApi from './Utils/QuizList';
 
 function App() {
-  const quizList = quizapi
-  const [question,setQuestion] = useState(quizapi)
+  
+  const [question,setQuestion] = useState([])
   const [score,setScore] = useState(0)
   const [response,setResponse] = useState(0)
-  console.log(quizList)
+  const getQuestion = ()=>{
+    quizApi().then(
+      q=>{
+        setQuestion(q)
+        // console.log(question)
+      }
+    )
+  }
+  useEffect(()=>{
+    getQuestion()
+  },[])
   const scoreval = (ans,correct)=>{
     if(ans===correct){
         setScore(score+1)
@@ -17,6 +27,8 @@ function App() {
     setResponse(response+1)
   }
   const playAgain=()=>{
+    getQuestion()
+    // console.log(question)
     setScore(0)
     setResponse(0)
   }

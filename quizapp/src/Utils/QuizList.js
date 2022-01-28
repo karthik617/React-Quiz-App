@@ -21,5 +21,7 @@ const quizapi = [
     },
 
   ];
- export default quizapi;
-// export default (n=4)=>Promise.resolve(quizapi.sort(()=>0.5-Math.random()).slice(0,n));
+// export default quizapi;
+const quizApi =(n=4)=>Promise.resolve(quizapi.sort(()=>0.5-Math.random()).slice(0,n));
+
+export default quizApi;
