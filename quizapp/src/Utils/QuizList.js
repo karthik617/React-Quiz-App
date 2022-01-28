@@ -18,8 +18,8 @@ const quizapi = [
       question:"What is karthik's mother name?",
       answer:["Jaya","Usha","Pavithra","Maya"],
       correct:"Jaya"
-    }
-  ]
-export default quizapi;
-/*(n=4)=>
- Promise.resolve(quizapi.sort(()=>0.5-Math.random()).slice(0,n))*/
+    },
+
+  ];
+ export default quizapi;
+// export default (n=4)=>Promise.resolve(quizapi.sort(()=>0.5-Math.random()).slice(0,n));

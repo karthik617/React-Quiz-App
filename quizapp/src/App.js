@@ -5,10 +5,11 @@ import Result from './Components/Result';
 import quizapi from './Utils/QuizList';
 
 function App() {
+  const quizList = quizapi
   const [question,setQuestion] = useState(quizapi)
   const [score,setScore] = useState(0)
   const [response,setResponse] = useState(0)
-  /*console.log(question)*/
+  console.log(quizList)
   const scoreval = (ans,correct)=>{
     if(ans===correct){
         setScore(score+1)
